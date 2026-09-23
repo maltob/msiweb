@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="boxTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="boxLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="boxRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#10b981" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="64" height="64" rx="14" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Isometric Package Box -->
+  <g filter="url(#glow)">
+    <!-- Top Face -->
+    <path d="M32 14 L50 23 L32 32 L14 23 Z" fill="url(#boxTop)" stroke="#6ee7b7" stroke-width="1" stroke-linejoin="round" />
+    
+    <!-- Left Face -->
+    <path d="M14 23 L32 32 L32 50 L14 41 Z" fill="url(#boxLeft)" stroke="#059669" stroke-width="1" stroke-linejoin="round" />
+    
+    <!-- Right Face -->
+    <path d="M32 32 L50 23 L50 41 L32 50 Z" fill="url(#boxRight)" stroke="#047857" stroke-width="1" stroke-linejoin="round" />
+
+    <!-- Center Fold/Tape Accent -->
+    <path d="M28 16 L36 20 L36 30 L28 26 Z" fill="#ecfdf5" fill-opacity="0.25" />
+  </g>
+
+  <!-- Windows 4-Tile Installer Emblem on Front Left -->
+  <g transform="translate(19, 31) skewY(-26) scale(0.65)">
+    <rect x="0" y="0" width="5.5" height="5.5" rx="0.8" fill="#38bdf8" />
+    <rect x="7" y="0" width="5.5" height="5.5" rx="0.8" fill="#34d399" />
+    <rect x="0" y="7" width="5.5" height="5.5" rx="0.8" fill="#fbbf24" />
+    <rect x="7" y="7" width="5.5" height="5.5" rx="0.8" fill="#f87171" />
+  </g>
+
+  <!-- Installation Arrow Badge on Top Right -->
+  <circle cx="45" cy="19" r="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+  <path d="M45 16 L45 22 M42.5 19.5 L45 22 L47.5 19.5" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

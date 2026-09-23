@@ -1,0 +1,29 @@
+# Rust build artifacts
+target/
+**/target/
+Cargo.lock
+
+# Node.js & Vite build artifacts
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.vite/
+**/vite/
+
+# MSI & test outputs
+*.msi
+*.cab
+*.log
+fixtures/
+
+# System & Editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.local
